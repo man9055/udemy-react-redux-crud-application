@@ -4,13 +4,13 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import './index.css';
 import reducer from './reducers';
-import App from './components/events-index';
+import EventsIndex from './components/events-index';
 import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
-  <App />
+  <EventsIndex />
   </Provider>, document.getElementById('root'));
 registerServiceWorker();
